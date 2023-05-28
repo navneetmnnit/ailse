@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aisle</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="premium_members_can_nview_all_their_likes_at_once">Premium members can\nview all their likes at once</string>
+    <string name="interested_in_you">Interested In You</string>
+    <string name="tap_to_review_50_notes">Tap to review 50+ notes</string>
+</resources>

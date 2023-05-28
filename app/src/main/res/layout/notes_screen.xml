@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"
+        android:text="Notes"
+        android:textSize="27sp"
+        android:textFontWeight="800"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gilroy_bold" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notes"
+        android:layout_marginTop="8dp"
+        android:text="Personal messages to you"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gilroy_regular"
+        android:textFontWeight="600"/>
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_interested"
+        android:layout_marginTop="15dp"
+        tools:src="@drawable/img_meena"/>
+
+    <TextView
+        android:id="@+id/tv_first_name_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name and age"
+        android:textColor="@color/white"
+        tools:src ="@drawable/img_meena"
+        app:layout_constraintStart_toStartOf="@+id/img_profile"
+        app:layout_constraintBottom_toBottomOf="@id/img_profile"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:textFontWeight="800"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/tv_more_profiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_review_50_notes"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_name_age"
+        app:layout_constraintStart_toStartOf="@id/tv_first_name_age"
+        android:fontFamily="@font/gilroy_regular"
+        android:textFontWeight="800"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/tv_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interested_in_you"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:textSize="22sp"
+        android:textFontWeight="800"/>
+
+    <TextView
+        android:id="@+id/tv_premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_members_can_nview_all_their_likes_at_once"
+        android:textColor="#9B9B9B"
+        app:layout_constraintStart_toStartOf="@id/tv_interested"
+        app:layout_constraintTop_toBottomOf="@+id/tv_interested"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_premium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile"
+        android:layout_marginTop="31dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/upgrade"
+        android:fontFamily="@font/gilroy_bold"
+        android:textFontWeight="800"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@drawable/border_upgrade"/>
+
+    <ImageView
+        android:id="@+id/img_teena"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toStartOf="@+id/img_beena"
+        android:src="@drawable/img_teena"
+        android:layout_marginBottom="19dp"/>
+
+    <ImageView
+        android:id="@+id/img_beena"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@+id/img_teena"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/img_beena"/>
+
+    <ImageView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:src="@drawable/img_navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
